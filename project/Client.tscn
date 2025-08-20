@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://actors/ui/UITree.gd" type="Script" id=1]
+
+[node name="Client" type="Node"]
+script = ExtResource( 1 )
+scenes = [ "res://ui/menu/Menu.tscn", "res://ui/HUD/HUD.tscn", "res://ui/options/Options.tscn", "res://ui/credits/Credits.tscn", "res://levels/Menu/Backmenu.tscn" ]
