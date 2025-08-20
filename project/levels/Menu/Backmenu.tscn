@@ -21,7 +21,7 @@ animations = [ {
 scale = Vector2( 3.2, 3.2 )
 frames = SubResource( 1 )
 animation = "main"
-frame = 4
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+current = true

@@ -20,19 +20,21 @@ align = 1
 
 [node name="Play" type="TextureButton" parent="."]
 margin_left = 896.0
-margin_top = 450.0
+margin_top = 460.0
 margin_right = 1024.0
-margin_bottom = 490.0
+margin_bottom = 500.0
 texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
+config_ui = [ "Terrain1", "HUD" ]
 
 [node name="Options" type="TextureButton" parent="."]
 margin_left = 896.0
-margin_top = 480.0
+margin_top = 485.0
 margin_right = 1024.0
-margin_bottom = 520.0
+margin_bottom = 525.0
 texture_normal = ExtResource( 5 )
 script = ExtResource( 1 )
+config_ui = [ "Backmenu", "Options" ]
 
 [node name="Credits" type="TextureButton" parent="."]
 margin_left = 896.0
@@ -41,11 +43,12 @@ margin_right = 1024.0
 margin_bottom = 550.0
 texture_normal = ExtResource( 4 )
 script = ExtResource( 1 )
+config_ui = [ "Backmenu", "Credits" ]
 
 [node name="Exit" type="TextureButton" parent="."]
 margin_left = 896.0
-margin_top = 540.0
+margin_top = 535.0
 margin_right = 1024.0
-margin_bottom = 580.0
+margin_bottom = 575.0
 texture_normal = ExtResource( 3 )
 script = ExtResource( 1 )
