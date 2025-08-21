@@ -1,13 +1,9 @@
 .DS_Store
 Thumbs.db
 
-__pycache__/
-
 .mono/
 .import/
-.vscode/
+.licensed/
 
-*.py
-*.log
 *.sublime-project
 *.sublime-workspace
