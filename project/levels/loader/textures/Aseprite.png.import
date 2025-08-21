@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Backmenu-export6.png-104a4fe579af7ea517eba6ec762b2e8b.stex"
+path="res://.import/Aseprite.png-1d89c971a8ebf08a52dc62456aeb1550.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/menu/Animation/Backmenu-export6.png"
-dest_files=[ "res://.import/Backmenu-export6.png-104a4fe579af7ea517eba6ec762b2e8b.stex" ]
+source_file="res://levels/loader/textures/Aseprite.png"
+dest_files=[ "res://.import/Aseprite.png-1d89c971a8ebf08a52dc62456aeb1550.stex" ]
 
 [params]
 

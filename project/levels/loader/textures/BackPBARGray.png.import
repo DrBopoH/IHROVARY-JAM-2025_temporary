@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Backmenu-export6.png-104a4fe579af7ea517eba6ec762b2e8b.stex"
+path="res://.import/BackPBARGray.png-42d9686b7ba5a31007739c0ea6aecbaf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/menu/Animation/Backmenu-export6.png"
-dest_files=[ "res://.import/Backmenu-export6.png-104a4fe579af7ea517eba6ec762b2e8b.stex" ]
+source_file="res://levels/loader/textures/BackPBARGray.png"
+dest_files=[ "res://.import/BackPBARGray.png-42d9686b7ba5a31007739c0ea6aecbaf.stex" ]
 
 [params]
 

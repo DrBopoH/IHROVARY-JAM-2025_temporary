@@ -9,6 +9,16 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Reference",
+"class": "ColorMath",
+"language": "GDScript",
+"path": "res://libraries/math/ColorMath.gd"
+}, {
+"base": "Sprite",
+"class": "LineBar",
+"language": "GDScript",
+"path": "res://libraries/ui/LineBar.gd"
+}, {
 "base": "TextureButton",
 "class": "NavButton",
 "language": "GDScript",
@@ -18,10 +28,24 @@ _global_script_classes=[ {
 "class": "UITree",
 "language": "GDScript",
 "path": "res://actors/ui/UITree.gd"
+}, {
+"base": "CanvasLayer",
+"class": "debugUI",
+"language": "GDScript",
+"path": "res://libraries/ui/debug/debugUI.gd"
+}, {
+"base": "Label",
+"class": "showvariableUI",
+"language": "GDScript",
+"path": "res://libraries/ui/debug/showvariableUI.gd"
 } ]
 _global_script_class_icons={
+"ColorMath": "",
+"LineBar": "",
 "NavButton": "",
-"UITree": ""
+"UITree": "",
+"debugUI": "",
+"showvariableUI": ""
 }
 
 [application]
@@ -30,10 +54,15 @@ config/name="IHROVARY JAM 2025 (temporary)"
 run/main_scene="res://Client.tscn"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 
+[autoload]
+
+Options="*res://app/options.gd"
+
 [display]
 
 window/size/width=1920
 window/size/height=1080
+window/size/fullscreen=true
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
