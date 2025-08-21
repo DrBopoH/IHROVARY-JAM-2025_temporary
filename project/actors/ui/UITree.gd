@@ -14,7 +14,7 @@ func _ready():
 	SceneRoot = Node2D.new()
 	SceneRoot.name = "SceneRoot"
 	
-	UiTree = Control.new()
+	UiTree = Control.new()                  
 	UiTree.name = "UiTree"
 	UiTree.rect_position = -get_viewport().size/2
 	
