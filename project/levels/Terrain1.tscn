@@ -56,3 +56,6 @@ tile_data = PoolIntArray( -720893, 0, 0, -720880, 0, 0, -589819, 0, 0, -327676, 
 
 [node name="Shadow" parent="." instance=ExtResource( 4 )]
 position = Vector2( 441, 10 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.25098, 0.25098, 0.25098, 1 )
