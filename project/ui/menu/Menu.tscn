@@ -34,7 +34,7 @@ margin_right = 1024.0
 margin_bottom = 514.0
 texture_normal = ExtResource( 5 )
 script = ExtResource( 1 )
-config_ui = [ "Backmenu", "Options" ]
+config_ui = [ "Backmenu", "Options", "NavBack" ]
 
 [node name="Credits" type="TextureButton" parent="."]
 margin_left = 896.0
@@ -43,7 +43,7 @@ margin_right = 1024.0
 margin_bottom = 579.0
 texture_normal = ExtResource( 4 )
 script = ExtResource( 1 )
-config_ui = [ "Backmenu", "Credits" ]
+config_ui = [ "Backmenu", "Credits", "NavBack" ]
 
 [node name="Exit" type="TextureButton" parent="."]
 margin_left = 896.0

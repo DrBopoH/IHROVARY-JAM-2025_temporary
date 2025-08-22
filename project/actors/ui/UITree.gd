@@ -5,6 +5,7 @@ export(Array, String) var start = []
 export(Array, String) var forever = []
 export(Array, String) var scenes = []
 
+var camera: Camera2D
 var history: Array = []
 
 var UiTree: Control
@@ -14,13 +15,10 @@ var SceneRoot: Node2D
 func _ready():
 	SceneRoot = Node2D.new()
 	SceneRoot.name = "SceneRoot"
+	add_child(SceneRoot)
 	
 	UiTree = Control.new()                  
 	UiTree.name = "UiTree"
-	UiTree.rect_position = -get_viewport().size/2
-	
-	get_viewport().connect("size_changed", self, "_on_viewport_size_changed")
-	add_child(SceneRoot)
 	add_child(UiTree)
 	
 	if start.size() == 0: return
@@ -35,6 +33,9 @@ func _mount_scene(node: Node, mount: bool = true) -> void:
 			if !child.config_ui: child.config_ui = [child.name]
 			if !child.is_connected("pressed", self, "_on_button_pressed"):
 				child.connect("pressed", self, "_on_button_pressed", [child])
+		if child is Camera2D:
+			if child.current:
+				camera = child
 		_mount_scene(child, false)
 	
 	if mount:
@@ -93,5 +94,5 @@ func _is_scene_loaded(path: String) -> bool:
 	return false
 
 
-func _on_viewport_size_changed():
-	UiTree.rect_position = -get_viewport().size / 2
+func _process(delta):
+	UiTree.rect_position = camera.global_position -get_viewport().size/2

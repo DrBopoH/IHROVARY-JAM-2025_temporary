@@ -6,8 +6,9 @@
 [node name="Terrain1" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 936, 499 )
 texture = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 926, 507 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
