@@ -2,7 +2,8 @@ extends KinematicBody2D
 
 
 var velocity = Vector2()
-var speed = 400
+var speed = 200
+
 var axis_lock = true
 
 

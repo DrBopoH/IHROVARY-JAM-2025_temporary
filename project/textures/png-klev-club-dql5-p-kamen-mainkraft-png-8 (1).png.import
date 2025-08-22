@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Backmenu-export8.png-30a5ba299dc6e50b40d957e345b791a0.stex"
+path="res://.import/png-klev-club-dql5-p-kamen-mainkraft-png-8 (1).png-0c96cb87159f503d419d3827bd279c99.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/Menu/Animation/Backmenu-export8.png"
-dest_files=[ "res://.import/Backmenu-export8.png-30a5ba299dc6e50b40d957e345b791a0.stex" ]
+source_file="res://textures/png-klev-club-dql5-p-kamen-mainkraft-png-8 (1).png"
+dest_files=[ "res://.import/png-klev-club-dql5-p-kamen-mainkraft-png-8 (1).png-0c96cb87159f503d419d3827bd279c99.stex" ]
 
 [params]
 
