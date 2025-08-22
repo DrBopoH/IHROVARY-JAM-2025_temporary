@@ -2,6 +2,7 @@ extends Node
 class_name UITree
 
 export(Array, String) var start = []
+export(Array, String) var forever = []
 export(Array, String) var scenes = []
 
 var history: Array = []
@@ -63,6 +64,8 @@ func get_fn(path: String) -> String:
 
 func _found(names: Array) -> Array:
 	var paths = []
+	names.append_array(forever)
+	
 	for path in scenes:
 		if get_fn(path) in names: paths.append(path)
 	

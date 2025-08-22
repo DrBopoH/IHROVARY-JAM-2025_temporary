@@ -20,13 +20,13 @@ animations = [ {
 [node name="Backmenu" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
 position = Vector2( 60, 0 )
 scale = Vector2( 3.5, 3.5 )
 frames = SubResource( 1 )
 animation = "main"
-frame = 7
+frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2( 1, 1 )
 current = true
