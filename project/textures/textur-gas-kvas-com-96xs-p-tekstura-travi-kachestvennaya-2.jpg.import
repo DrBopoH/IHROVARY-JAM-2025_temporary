@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Backmenu-export8.png-30a5ba299dc6e50b40d957e345b791a0.stex"
+path="res://.import/textur-gas-kvas-com-96xs-p-tekstura-travi-kachestvennaya-2.jpg-dea52587e5e6e2bbcb864a957bcaa78b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/Menu/Animation/Backmenu-export8.png"
-dest_files=[ "res://.import/Backmenu-export8.png-30a5ba299dc6e50b40d957e345b791a0.stex" ]
+source_file="res://textures/textur-gas-kvas-com-96xs-p-tekstura-travi-kachestvennaya-2.jpg"
+dest_files=[ "res://.import/textur-gas-kvas-com-96xs-p-tekstura-travi-kachestvennaya-2.jpg-dea52587e5e6e2bbcb864a957bcaa78b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
