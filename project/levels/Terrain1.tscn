@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://levels/grass.tres" type="TileSet" id=1]
 [ext_resource path="res://actors/player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://textures/png-klev-club-dql5-p-kamen-mainkraft-png-8 (1).png" type="Texture" id=3]
+[ext_resource path="res://actors/shadow/Shadow.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -51,4 +52,7 @@ cell_size = Vector2( 32, 32 )
 cell_tile_origin = 1
 cell_y_sort = true
 format = 1
-tile_data = PoolIntArray( -720893, 0, 0, -589819, 0, 0, -327676, 0, 0, -196609, 0, 0, -196596, -1073741824, 0, -196594, -1073741824, 0 )
+tile_data = PoolIntArray( -720893, 0, 0, -720880, 0, 0, -589819, 0, 0, -327676, 0, 0, -327666, 0, 0, -196609, 0, 0, -196597, 0, 0 )
+
+[node name="Shadow" parent="." instance=ExtResource( 4 )]
+position = Vector2( 441, 10 )
