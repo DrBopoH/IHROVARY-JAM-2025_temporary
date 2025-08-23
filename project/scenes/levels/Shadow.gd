@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var tile_size = 32  # Размер клетки тайлмапа
 export var move_delay = 1.5  # Задержка между движениями
-export var damage = 20
+export var damage = 100
 
 var player = null
 var is_moving = false
