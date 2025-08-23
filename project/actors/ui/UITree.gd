@@ -8,7 +8,7 @@ export(Array, String) var scenes = []
 var camera: Camera2D
 var history: Array = []
 
-var UiTree: Control
+var UiTree: CanvasLayer
 var SceneRoot: Node2D
 
 
@@ -17,7 +17,7 @@ func _ready():
 	SceneRoot.name = "SceneRoot"
 	add_child(SceneRoot)
 	
-	UiTree = Control.new()                  
+	UiTree = CanvasLayer.new()                  
 	UiTree.name = "UiTree"
 	add_child(UiTree)
 	
@@ -92,7 +92,3 @@ func _is_scene_loaded(path: String) -> bool:
 	for child in UiTree.get_children() + SceneRoot.get_children():
 		if child.name == get_fn(path): return true
 	return false
-
-
-func _process(delta):
-	UiTree.rect_position = camera.global_position -get_viewport().size/2

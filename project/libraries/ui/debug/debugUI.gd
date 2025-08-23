@@ -14,7 +14,7 @@ var _variables: Dictionary = { #VARIABLES
 	'dynamicmemory_usage':[funcref(self, 'plug_update'), 'MB', false],
 	'rendering_loadrate':[funcref(self, 'renderingload_update'), 'F/s', false],
 }
-var color_stages: Array = [Color(1, 0, 0), Color(1, 1, 0), Color(0, 1, 0)] 
+export var color_stages: Array = [Color(1, 0, 0), Color(1, 1, 0), Color(0, 1, 0)] 
 
 
 func _ready() -> void: #INIT
