@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://actors/entitys/player1/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://actors/entitys/shadow/Shadow.tscn" type="PackedScene" id=2]
 [ext_resource path="res://textures/png-klev-club-dql5-p-kamen-mainkraft-png-8 (1).png" type="Texture" id=3]
 [ext_resource path="res://scenes/levels/grass.tres" type="TileSet" id=4]
+
+[sub_resource type="OccluderPolygon2D" id=3]
+polygon = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -16,6 +19,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/region = Rect2( 0, 0, 32, 32 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
+0/occluder = SubResource( 3 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -49,7 +53,7 @@ cell_size = Vector2( 32, 32 )
 cell_tile_origin = 1
 cell_y_sort = true
 format = 1
-tile_data = PoolIntArray( -720893, 0, 0, -720880, 0, 0, -589819, 0, 0, -327676, 0, 0, -327666, 0, 0, -196609, 0, 0, -196597, 0, 0 )
+tile_data = PoolIntArray( -720893, 0, 0, -720880, 0, 0, -589819, 0, 0, -327676, 0, 0, -327666, 0, 0, -196609, 0, 0, -196597, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 
