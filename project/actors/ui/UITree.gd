@@ -19,6 +19,7 @@ func _ready():
 	
 	UiTree = CanvasLayer.new()                  
 	UiTree.name = "UiTree"
+	UiTree.scale = Vector2(get_viewport().size.x/1920, get_viewport().size.y/1080)
 	add_child(UiTree)
 	
 	if start.size() == 0: return

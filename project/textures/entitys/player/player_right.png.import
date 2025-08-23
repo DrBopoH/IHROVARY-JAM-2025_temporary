@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Backmenu-export3.png-ad6e5de4056a86b4ce3656bce66dcdad.stex"
+path="res://.import/player_right.png-541a56ef3ddd2ba894b3ec66e7911ba4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Animation/Backmenu-export3.png"
-dest_files=[ "res://.import/Backmenu-export3.png-ad6e5de4056a86b4ce3656bce66dcdad.stex" ]
+source_file="res://textures/entitys/player/player_right.png"
+dest_files=[ "res://.import/player_right.png-541a56ef3ddd2ba894b3ec66e7911ba4.stex" ]
 
 [params]
 

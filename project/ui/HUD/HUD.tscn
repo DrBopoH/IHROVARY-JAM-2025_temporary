@@ -20,4 +20,4 @@ margin_right = 128.0
 margin_bottom = 128.0
 texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
-config_ui = [ "Terrain1", "Pause" ]
+config_ui = [ "Level1", "Pause" ]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Backmenu-export8.png-55b5e5301b03a770595a258033ff5121.stex"
+path="res://.import/Arrow.png-5f3a70e30e0d88cc4ff398354435f3ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Animation/Backmenu-export8.png"
-dest_files=[ "res://.import/Backmenu-export8.png-55b5e5301b03a770595a258033ff5121.stex" ]
+source_file="res://textures/arroy/Arrow.png"
+dest_files=[ "res://.import/Arrow.png-5f3a70e30e0d88cc4ff398354435f3ae.stex" ]
 
 [params]
 

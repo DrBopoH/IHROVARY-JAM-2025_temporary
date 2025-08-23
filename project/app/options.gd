@@ -1,7 +1,9 @@
 extends Node
 
-var debug: bool = true
-var loader_time: float = 20.0
+var debug:= true
+var loader_time:= 20.0
+
+var grid_size:= 32
 
 var version:= "v0.a.13"
 

@@ -25,7 +25,7 @@ margin_right = 1024.0
 margin_bottom = 164.0
 texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
-config_ui = [ "Terrain1", "HUD" ]
+config_ui = [ "Level", "HUD" ]
 
 [node name="Options" type="TextureButton" parent="."]
 margin_left = 896.0

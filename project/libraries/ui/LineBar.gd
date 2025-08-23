@@ -15,7 +15,7 @@ var _px_y: int
 var _pixelize: bool
 var last_percent: float = 1.0
 var _size: Vector2 = Vector2.ONE
-var color_stages: Array = [Color(1, 0, 0), Color(1, 1, 0), Color(0, 1, 0)]
+export(Array, Color) var color_stages: Array = [Color(1, 0, 0), Color(1, 1, 0), Color(0, 1, 0)]
 
 
 func set_pixelize() -> void: #INIT

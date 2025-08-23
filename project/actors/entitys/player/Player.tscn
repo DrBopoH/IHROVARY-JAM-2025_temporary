@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://actors/pcamera/PCamera.gd" type="Script" id=2]
+[ext_resource path="res://textures/entitys/player/player_back.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": false,
+"name": "back",
+"speed": 1.0
+} ]
+
+[node name="Player" type="Node2D"]
+
+[node name="PCamera" type="Camera2D" parent="."]
+current = true
+script = ExtResource( 2 )
+minmax = Vector2( 0.25, 0.75 )
+
+[node name="Texture" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "back"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://actors/entitys/player1/Player.gd" type="Script" id=1]
+[ext_resource path="res://actors/entitys/player1/Player1.gd" type="Script" id=1]
 [ext_resource path="res://textures/нахрюк.png" type="Texture" id=2]
 [ext_resource path="res://textures/light_on!.png" type="Texture" id=3]
 
