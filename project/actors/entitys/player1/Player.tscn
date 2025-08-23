@@ -21,3 +21,4 @@ shape = SubResource( 1 )
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 3 )
+shadow_enabled = true
