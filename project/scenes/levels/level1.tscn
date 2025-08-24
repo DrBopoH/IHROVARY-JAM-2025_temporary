@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://textures/level/tiles/swampdirt2.png" type="Texture" id=1]
 [ext_resource path="res://textures/level/tiles/beachdirt1.png" type="Texture" id=2]
@@ -37,6 +37,12 @@
 [ext_resource path="res://textures/level/block/Дерево 1.png" type="Texture" id=35]
 [ext_resource path="res://textures/level/block/Дерево 2.png" type="Texture" id=36]
 [ext_resource path="res://textures/level/tiles/beachpath4.png" type="Texture" id=37]
+[ext_resource path="res://textures/kostermeh.png" type="Texture" id=38]
+[ext_resource path="res://textures/kostermeh2.png" type="Texture" id=39]
+[ext_resource path="res://textures/kostermeh3.png" type="Texture" id=40]
+[ext_resource path="res://textures/campfire_light.png" type="Texture" id=41]
+[ext_resource path="res://textures/Бочка.png" type="Texture" id=42]
+[ext_resource path="res://textures/Камень 1.png" type="Texture" id=43]
 [ext_resource path="res://textures/level/block/muhomor.png" type="Texture" id=54]
 [ext_resource path="res://textures/level/env/mini_mehomorchik.png" type="Texture" id=55]
 [ext_resource path="res://textures/level/block/Дерево 6.png" type="Texture" id=56]
@@ -379,6 +385,18 @@
 24/shapes = [  ]
 24/z_index = 0
 
+[sub_resource type="OccluderPolygon2D" id=7]
+polygon = PoolVector2Array( 6, 45, 16, 46, 28, 47, 29, 34, 17, 35 )
+
+[sub_resource type="OccluderPolygon2D" id=8]
+polygon = PoolVector2Array( 29, 42, 16, 41, 25, 31 )
+
+[sub_resource type="OccluderPolygon2D" id=5]
+polygon = PoolVector2Array( 25, 52, 25, 60, 32, 64, 40, 56, 35, 49 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 42, 44, 38, 56, 24, 56, 22, 42 )
+
 [sub_resource type="TileSet" id=3]
 0/name = "Дерево 6.png 0"
 0/texture = ExtResource( 56 )
@@ -387,6 +405,7 @@
 0/region = Rect2( 0, 0, 32, 64 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
+0/occluder = SubResource( 7 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -401,6 +420,7 @@
 1/region = Rect2( 0, 0, 32, 64 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
+1/occluder = SubResource( 8 )
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -415,12 +435,20 @@
 2/region = Rect2( 0, 0, 64, 64 )
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
+2/occluder = SubResource( 5 )
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 4 )
 2/shape_one_way = false
-2/shape_one_way_margin = 0.0
-2/shapes = [  ]
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 2/z_index = 0
 3/name = "water.png 3"
 3/texture = ExtResource( 32 )
@@ -478,6 +506,12 @@
 6/shape_one_way_margin = 0.0
 6/shapes = [  ]
 6/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 24, 24, 0, 24, 0, 0, 24, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 64, 32, 0, 32, 0, 0, 64, 0 )
 
 [sub_resource type="TileSet" id=2]
 0/name = "grass.png 0"
@@ -634,6 +668,56 @@
 24/shape_one_way_margin = 0.0
 24/shapes = [  ]
 24/z_index = 0
+25/name = "Бочка.png 25"
+25/texture = ExtResource( 42 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( -3, -3, 23, 28 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape = SubResource( 10 )
+25/shape_one_way = false
+25/shape_one_way_margin = 1.0
+25/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+25/z_index = 0
+26/name = "Камень 1.png 26"
+26/texture = ExtResource( 43 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 64, 32 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape = SubResource( 9 )
+26/shape_one_way = false
+26/shape_one_way_margin = 1.0
+26/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+26/z_index = 0
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 16, -8 )
@@ -654,4 +738,18 @@ tile_data = PoolIntArray( -786427, 4, 0, -720895, 2, 0, -720888, 2, 0, -524274, 
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( -851959, 3, 0, -655365, 4, 0, -655362, 2, 0, -720885, 8, 0, -655360, 23, 0, -655354, 9, 0, -458758, 0, 0, -524286, 9, 0, -524284, 2, 0, -524278, 0, 0, -393224, 9, 0, -393219, 8, 0, -393209, 8, 0, -393203, 9, 0, -196610, 0, 0, -262139, 32, 0, -262136, 0, 0, -65542, 8, 0, -131056, 5, 0, -6, 8, 0, -65531, 23, 0, -65528, 4, 0, 3, 3, 0, 6, 4, 0, 8, 5, 0, 131069, 24, 0, 65540, 8, 0, 65542, 5, 0, 65543, 2, 0, 65544, 4, 0, 65546, 8, 0, 65547, 0, 0, 196607, 1, 0, 131073, 7, 0, 131078, 5, 0, 131080, 4, 0, 262140, 1, 0, 196609, 24, 0, 196611, 6, 0, 196612, 7, 0, 196614, 4, 0, 196616, 5, 0, 262144, 0, 0, 262150, 9, 0, 262152, 8, 0, 393209, 9, 0, 393211, 0, 0, 327686, 2, 0, 327689, 1, 0, 327690, 1, 0, 393217, 3, 0, 458756, 9, 0, 458757, 0, 0, 458761, 1, 0, 589815, 2, 0, 524291, 6, 0, 524299, 6, 0, 524303, 3, 0, 655359, 24, 0, 589831, 5, 0, 720889, 4, 0, 720893, 0, 0, 655369, 24, 0, 720898, 8, 0, 720906, 2, 0, 720909, 9, 0, 786436, 23, 0 )
+tile_data = PoolIntArray( -851959, 3, 0, -655365, 4, 0, -655362, 2, 0, -720885, 8, 0, -655360, 23, 0, -655354, 9, 0, -458758, 0, 0, -524286, 9, 0, -524284, 2, 0, -524278, 0, 0, -393224, 9, 0, -393219, 8, 0, -327683, 26, 0, -393209, 8, 0, -393203, 9, 0, -196614, 25, 0, -196610, 0, 0, -262139, 32, 0, -262136, 0, 0, -65542, 8, 0, -131056, 5, 0, -6, 8, 0, -65531, 23, 0, -65528, 4, 0, 3, 3, 0, 6, 4, 0, 8, 5, 0, 131069, 24, 0, 65540, 8, 0, 65542, 5, 0, 65543, 2, 0, 65544, 4, 0, 65546, 8, 0, 65547, 0, 0, 196607, 1, 0, 131073, 7, 0, 131078, 5, 0, 131080, 4, 0, 262140, 1, 0, 196609, 24, 0, 196611, 6, 0, 196612, 7, 0, 196614, 4, 0, 196616, 5, 0, 262144, 0, 0, 262150, 9, 0, 262152, 8, 0, 393209, 9, 0, 393211, 0, 0, 327686, 2, 0, 327689, 1, 0, 327690, 1, 0, 393217, 3, 0, 458756, 9, 0, 458757, 0, 0, 458761, 1, 0, 589815, 2, 0, 524291, 6, 0, 524299, 6, 0, 524303, 3, 0, 655359, 24, 0, 589831, 5, 0, 720889, 4, 0, 720893, 0, 0, 655369, 24, 0, 720898, 8, 0, 720906, 2, 0, 720909, 9, 0, 786436, 23, 0 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -107, -120 )
+frames = SubResource( 6 )
+speed_scale = 2.0
+playing = true
+
+[node name="Light2D" type="Light2D" parent="AnimatedSprite"]
+position = Vector2( -1, 10 )
+scale = Vector2( 1.01151, 0.993043 )
+texture = ExtResource( 41 )
+color = Color( 0.921569, 0.756863, 0, 1 )
+energy = 1.41
+shadow_enabled = true

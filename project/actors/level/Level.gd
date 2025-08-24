@@ -16,6 +16,11 @@ var way: Array
 var tic: int
 
 func _ready():
+	
+	$Player/Light2D.shadow_enabled = true
+	$Player/Light2D.shadow_color = Color(0, 0, 0, 0.8)
+	$Player/Light2D.shadow_filter = Light2D.SHADOW_FILTER_PCF5
+	
 	var id = 0 
 	for x in range(-level_size, level_size): 
 		for y in range(-level_size, level_size): 
