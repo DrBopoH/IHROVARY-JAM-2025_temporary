@@ -115,7 +115,8 @@ func _physics_process(delta):
 			var movtime = float(move_tic)/Engine.iterations_per_second
 			
 			for am in $Level1.time.keys():
-				if time < $Level1.time[am]: Options.AM.text = am
+				if time > $Level1.time[am]: Options.AM.text = am
+				else: Options.AM.text = '0:00 AM'
 			
 			if time < $Level1.time['5:00 AM']:
 				if way.size() > 0:

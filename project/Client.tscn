@@ -4,6 +4,6 @@
 
 [node name="Client" type="Node"]
 script = ExtResource( 1 )
-start = [ "Backmenu", "Menu" ]
+start = [ "Backloader", "Loader" ]
 forever = [ "Debug", "Version" ]
 scenes = [ "res://ui/menu/Menu.tscn", "res://ui/HUD/HUD.tscn", "res://ui/options/Options.tscn", "res://ui/credits/Credits.tscn", "res://scenes/menu/Backmenu.tscn", "res://scenes/levels/Terrain1.tscn", "res://ui/pause/Pause.tscn", "res://ui/loader/Loader.tscn", "res://scenes/loader/Backloader.tscn", "res://ui/utils/debug/Debug.tscn", "res://ui/utils/back/NavBack.tscn", "res://ui/utils/version/Version.tscn", "res://actors/level/Level.tscn", "res://actors/entitys/player1/Player1.tscn", "res://actors/entitys/shadow/Shadow.tscn", "res://actors/entitys/player/Player.tscn" ]

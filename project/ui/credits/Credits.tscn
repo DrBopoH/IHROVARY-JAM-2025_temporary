@@ -1,10 +1,28 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://ui/utils/fonts/Pixel.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ui/credits/photo_2020-01-08_09-24-10.jpg" type="Texture" id=2]
+[ext_resource path="res://ui/credits/Снимок экрана 2025-08-24 192511.png" type="Texture" id=3]
+[ext_resource path="res://ui/credits/photo_2025-05-15_17-04-57.jpg" type="Texture" id=4]
+[ext_resource path="res://scenes/loader/licensed/Logo.png" type="Texture" id=5]
+[ext_resource path="res://ui/utils/fonts/PixelWrite.tres" type="DynamicFont" id=6]
+[ext_resource path="res://ui/credits/photo_2025-08-21_16-53-51.jpg" type="Texture" id=7]
+[ext_resource path="res://ui/credits/photo_2025-08-24_19-21-24.jpg" type="Texture" id=8]
+[ext_resource path="res://actors/ui/NavButton.gd" type="Script" id=9]
+[ext_resource path="res://ui/utils/back/NavBack.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/loader/textures/Back1.png" type="Texture" id=11]
 
 [node name="Credits" type="Control"]
 margin_right = 40.0
 margin_bottom = 40.0
+
+[node name="Back1" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 0.392157 )
+position = Vector2( 960, 753 )
+scale = Vector2( 0.47, 0.26 )
+texture = ExtResource( 11 )
+
+[node name="NavBack" parent="." instance=ExtResource( 10 )]
 
 [node name="Label" type="Label" parent="."]
 margin_left = 925.0
@@ -14,3 +32,235 @@ margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
 text = "Credits"
 align = 1
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 959, 455 )
+texture = ExtResource( 5 )
+
+[node name="Photo2025-08-2419-21-24" type="Sprite" parent="."]
+position = Vector2( 711, 761 )
+scale = Vector2( 0.06, 0.06 )
+texture = ExtResource( 8 )
+
+[node name="Photo2025-08-2116-53-51" type="Sprite" parent="."]
+position = Vector2( 201, 856 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 7 )
+
+[node name="Photo2025-05-1517-04-57" type="Sprite" parent="."]
+position = Vector2( 198, 770 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 4 )
+
+[node name="СнимокЭкрана2025-08-24192511" type="Sprite" parent="."]
+position = Vector2( 711, 853 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 3 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 238.0
+margin_top = 734.0
+margin_right = 660.0
+margin_bottom = 825.0
+custom_fonts/font = ExtResource( 6 )
+text = "DrBopoH"
+
+[node name="Label7" type="Label" parent="."]
+margin_left = 259.0
+margin_top = 753.0
+margin_right = 681.0
+margin_bottom = 844.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+Студент УКУ, Лід-Прогер"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 241.0
+margin_top = 823.0
+margin_right = 663.0
+margin_bottom = 914.0
+custom_fonts/font = ExtResource( 6 )
+text = "Neiro65"
+
+[node name="label" type="Label" parent="."]
+margin_left = 262.0
+margin_top = 840.0
+margin_right = 684.0
+margin_bottom = 931.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+Хім-біошнік, Художник"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 752.0
+margin_top = 814.0
+margin_right = 1470.0
+margin_bottom = 952.0
+custom_fonts/font = ExtResource( 6 )
+text = "NEONSPIRIT"
+
+[node name="Label9" type="Label" parent="."]
+margin_left = 775.0
+margin_top = 830.0
+margin_right = 1493.0
+margin_bottom = 968.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+Втомився. Композитор"
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 751.0
+margin_top = 728.0
+margin_right = 1173.0
+margin_bottom = 819.0
+custom_fonts/font = ExtResource( 6 )
+text = "Ice_STORM
+"
+
+[node name="Label11" type="Label" parent="."]
+margin_left = 772.0
+margin_top = 746.0
+margin_right = 1194.0
+margin_bottom = 837.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+Робітник KFC, Прогер"
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 1294.0
+margin_top = 737.0
+margin_right = 1770.0
+margin_bottom = 828.0
+custom_fonts/font = ExtResource( 6 )
+text = "Wisp
+"
+
+[node name="Label8" type="Label" parent="."]
+margin_left = 1315.0
+margin_top = 750.0
+margin_right = 1791.0
+margin_bottom = 841.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+Кавалерист, Гейм Дизайнер"
+
+[node name="Photo2020-01-0809-24-10" type="Sprite" parent="."]
+position = Vector2( 1253, 767 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+
+[node name="Link" type="TextureButton" parent="."]
+anchor_left = 22.475
+anchor_top = 24.85
+anchor_right = 22.475
+anchor_bottom = 24.85
+margin_left = -233.0
+margin_top = -99.0
+margin_right = 233.0
+margin_bottom = -59.0
+script = ExtResource( 9 )
+config_ui = [ "Link", "https://www.youtube.com/@NEONSPIRITbeat" ]
+
+[node name="Label10" type="Label" parent="Link"]
+margin_left = 12.0
+margin_top = -49.0
+margin_right = 730.0
+margin_bottom = 89.0
+custom_colors/font_color = Color( 0, 0.670588, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "
+
+https://www.youtube.com/@NEONSPIRITbeat"
+
+[node name="Link2" type="TextureButton" parent="."]
+anchor_left = 10.612
+anchor_top = 25.55
+anchor_right = 10.612
+anchor_bottom = 25.55
+margin_left = -198.48
+margin_top = -20.0001
+margin_right = 198.52
+margin_bottom = 19.9999
+script = ExtResource( 9 )
+config_ui = [ "Link", "https://www.youtube.com/@TongMTcs" ]
+
+[node name="Label10" type="Label" parent="Link2"]
+margin_left = 12.0
+margin_top = -49.0
+margin_right = 730.0
+margin_bottom = 89.0
+custom_colors/font_color = Color( 0, 0.670588, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "
+
+https://www.youtube.com/@TongMTcs"
+
+[node name="Label" type="Label" parent="Link2"]
+margin_left = -148.0
+margin_top = -16.0
+margin_right = -2.0
+margin_bottom = 28.0
+custom_fonts/font = ExtResource( 6 )
+text = "YouTube:"
+
+[node name="Link3" type="TextureButton" parent="."]
+anchor_left = 26.337
+anchor_top = 25.55
+anchor_right = 26.337
+anchor_bottom = 25.55
+margin_left = -295.48
+margin_top = -20.0001
+margin_right = 295.52
+margin_bottom = 19.9999
+script = ExtResource( 9 )
+config_ui = [ "Link", "https://github.com/DrBopoH/Ihrovary-JAM-2025__TRACE__" ]
+
+[node name="Label10" type="Label" parent="Link3"]
+margin_left = 12.0
+margin_top = -49.0
+margin_right = 730.0
+margin_bottom = 89.0
+custom_colors/font_color = Color( 0, 0.670588, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "
+
+https://github.com/DrBopoH/Ihrovary-JAM-2025__TRACE__"
+
+[node name="Label" type="Label" parent="Link3"]
+margin_left = -114.0
+margin_top = -16.0
+margin_right = 32.0
+margin_bottom = 28.0
+custom_fonts/font = ExtResource( 6 )
+text = "Source:"
+
+[node name="Link4" type="TextureButton" parent="."]
+anchor_left = 41.362
+anchor_top = 25.55
+anchor_right = 41.362
+anchor_bottom = 25.55
+margin_left = -169.48
+margin_top = -20.0001
+margin_right = 169.52
+margin_bottom = 19.9999
+script = ExtResource( 9 )
+config_ui = [ "Link", "https://discord.gg/UQ9K8SNb74" ]
+
+[node name="Label10" type="Label" parent="Link4"]
+margin_left = 12.0
+margin_top = -49.0
+margin_right = 730.0
+margin_bottom = 89.0
+custom_colors/font_color = Color( 0, 0.670588, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "
+
+https://discord.gg/UQ9K8SNb74"
+
+[node name="Label" type="Label" parent="Link4"]
+margin_left = -120.0
+margin_top = -16.0
+margin_right = 26.0
+margin_bottom = 28.0
+custom_fonts/font = ExtResource( 6 )
+text = "Discord:"

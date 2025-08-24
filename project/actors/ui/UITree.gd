@@ -52,6 +52,8 @@ func _on_button_pressed(button: NavButton):
 	
 	elif "Exit" in button.config_ui: get_tree().quit()
 	
+	elif "Link" in button.config_ui: OS.shell_open(button.config_ui[-1])
+	
 	else:
 		var paths = _found(button.config_ui)
 		

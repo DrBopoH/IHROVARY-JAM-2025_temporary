@@ -38,8 +38,8 @@
 [ext_resource path="res://textures/level/block/Дерево 2.png" type="Texture" id=36]
 [ext_resource path="res://textures/level/tiles/beachpath4.png" type="Texture" id=37]
 [ext_resource path="res://scenes/levels/Level1.gd" type="Script" id=38]
-[ext_resource path="res://textures/kostermeh3.png" type="Texture" id=39]
-[ext_resource path="res://textures/kostermeh2.png" type="Texture" id=40]
+[ext_resource path="res://textures/kostermeh2.png" type="Texture" id=39]
+[ext_resource path="res://textures/kostermeh3.png" type="Texture" id=40]
 [ext_resource path="res://textures/campfire_light.png" type="Texture" id=41]
 [ext_resource path="res://textures/kostermeh.png" type="Texture" id=42]
 [ext_resource path="res://textures/level/tiles/beachpath0.png" type="Texture" id=43]
@@ -700,7 +700,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 42 ), ExtResource( 40 ), ExtResource( 39 ) ],
+"frames": [ ExtResource( 42 ), ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -734,7 +734,6 @@ tile_data = PoolIntArray( -851959, 3, 0, -655365, 4, 0, -655362, 2, 0, -720885, 
 [node name="Campfire" type="AnimatedSprite" parent="."]
 position = Vector2( -106, -124 )
 frames = SubResource( 4 )
-frame = 2
 speed_scale = 1.5
 playing = true
 

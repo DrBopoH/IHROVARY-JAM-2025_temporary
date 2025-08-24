@@ -62,7 +62,7 @@ margin_top = 225.0
 margin_right = 1025.0
 margin_bottom = 289.0
 script = ExtResource( 1 )
-config_ui = [ "Backmenu", "Credits", "NavBack" ]
+config_ui = [ "Backmenu", "Credits" ]
 
 [node name="Label" type="Label" parent="Credits"]
 anchor_left = 0.5

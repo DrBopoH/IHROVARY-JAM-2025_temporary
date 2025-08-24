@@ -17,6 +17,6 @@ var pixel_font:= preload("res://ui/utils/fonts/Pixel.tres")
 
 var grid_size:= 32
 
-var version:= "v0.a.13"
+var version:= "v0.a2.42"
 
 func _ready(): randomize()

@@ -58,7 +58,9 @@ _global_script_class_icons={
 
 config/name="Ihrovary JAM2025  TRACE"
 run/main_scene="res://Client.tscn"
+boot_splash/image="res://scenes/loader/textures/Back1.png"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
+config/icon="res://app/Лого.png"
 
 [autoload]
 
