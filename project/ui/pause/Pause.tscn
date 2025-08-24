@@ -87,7 +87,7 @@ margin_top = 290.0
 margin_right = 1103.0
 margin_bottom = 361.0
 script = ExtResource( 1 )
-config_ui = [ "Backmenu", "Menu" ]
+config_ui = [  ]
 
 [node name="Label" type="Label" parent="Exit"]
 anchor_left = 0.5

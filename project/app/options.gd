@@ -7,6 +7,9 @@ var paused: bool
 
 var current_camera: Camera2D
 var current_hpbar: LineBar
+var step_timebar: LineBar
+var steps: Label
+var AM: Label
 
 var pixel_font:= preload("res://ui/utils/fonts/Pixel.tres")
 

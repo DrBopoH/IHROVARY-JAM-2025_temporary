@@ -39,8 +39,13 @@ minmax = Vector2( 0.25, 0.75 )
 
 [node name="Texture" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "left"
+animation = "front"
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 6 )
 offset = Vector2( -1.5, 106 )
+
+[node name="Area2D" type="Area2D" parent="Light2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Light2D/Area2D"]
+polygon = PoolVector2Array( 0, -28, 144, 184, 49, 246, -45, 246, -146, 182 )

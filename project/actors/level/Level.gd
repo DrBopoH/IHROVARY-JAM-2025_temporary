@@ -2,6 +2,7 @@ extends Node2D
 
 
 export(float) var move_time
+var move_tic: int
 
 var astral:= AStar2D.new() 
 
@@ -9,6 +10,12 @@ var level_size:= 100
 
 var player_posito: Vector2
 var target_posito: Vector2
+
+var targ_light_degrees: float
+
+var step: int
+var acts_in_step: int = 1
+var sw_acts_in_step: int = 1
 
 var paths: Dictionary
 var way: Array 
@@ -38,7 +45,7 @@ func _ready():
 
 func _input(event): 
 	if event is InputEventMouseButton and event.pressed: 
-		if get_viewport().get_mouse_position().x > 64 and get_viewport().get_mouse_position().y > 64: 
+		if get_viewport().get_mouse_position().x > 128 and get_viewport().get_mouse_position().y > 64: 
 			match event.button_index: 
 				BUTTON_LEFT: 
 					player_posito = to_grid($Player.position)
@@ -74,30 +81,51 @@ func get_direction(from: Vector2, to: Vector2) -> String:
 
 func _physics_process(delta):
 	if !Options.paused:
-		if way.size() > 0:
-			$Player.position = lerp($Player.position, way[0], 0.1)
-			
-			if tic % int(move_time*Engine.iterations_per_second) == 0:
-				$Player.position = way[0]
-				way.remove(0)
-				tic = 0
-				
-				if way.size() > 0: 
-					$Player/Texture.play(get_direction($Player.position, way[0]))
-					match $Player/Texture.animation:
-						"right": 
-							$Player/Light2D.rotation_degrees = 270
-							$Player/Light2D.offset = Vector2(5, 112)
-						"back": 
-							$Player/Light2D.rotation_degrees = 180
-							$Player/Light2D.offset = Vector2(-0.5, 128)
-						"left": 
-							$Player/Light2D.rotation_degrees = 90
-							$Player/Light2D.offset = Vector2(-7.5, 112)
-						"front": 
-							$Player/Light2D.rotation_degrees = 0
-							$Player/Light2D.offset = Vector2(-1, 106)
-
-		if $Arrow.modulate.a != 0: $Arrow.modulate.a = lerp($Arrow.modulate.a, 0, 1.0 - exp(-0.5 * delta))
+		var time = float(tic)/Engine.iterations_per_second
+		var movtime = float(move_tic)/Engine.iterations_per_second
 		
-		tic+= 1
+		for am in $Level1.time.keys():
+			if time > $Level1.time[am]: Options.AM.text = am
+		
+		if time < $Level1.time['5:00 AM']:
+			if way.size() > 0:
+				$Player/Light2D.rotation = lerp_angle($Player/Light2D.rotation, deg2rad(targ_light_degrees), 10*delta)
+				$Player.position = lerp($Player.position, way[0], 0.1)
+				
+				if acts_in_step > 0:
+					if tic % Engine.iterations_per_second == 0:
+						$Player.position = way[0]
+						way.remove(0)
+						
+						if way.size() > 0: 
+							acts_in_step-= 1
+							
+							$Player/Texture.play(get_direction($Player.position, way[0]))
+							match $Player/Texture.animation:
+								"right": 
+									targ_light_degrees = 270
+									$Player/Light2D.offset = Vector2(5, 112)
+								"back": 
+									targ_light_degrees = 180
+									$Player/Light2D.offset = Vector2(-0.5, 128)
+								"left": 
+									targ_light_degrees = 90
+									$Player/Light2D.offset = Vector2(-7.5, 112)
+								"front": 
+									targ_light_degrees = 0
+									$Player/Light2D.offset = Vector2(-1, 106)
+			
+			if $Arrow.modulate.a != 0: $Arrow.modulate.a = lerp($Arrow.modulate.a, 0, 1.0 - exp(-0.5 * delta))
+			
+			if move_tic > move_time*Engine.iterations_per_second or acts_in_step < 1:
+				step+= 1
+				acts_in_step = 1
+				sw_acts_in_step = 1
+				move_tic = 0
+				
+				Options.steps.text = "Step: " + str(step)
+			else: Options.step_timebar.progress(1 - movtime/move_time)
+				
+			
+			move_tic+= 1
+			tic+= 1
