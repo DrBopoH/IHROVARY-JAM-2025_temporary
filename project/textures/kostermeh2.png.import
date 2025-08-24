@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tropinka_pryamaya.png-39194b66caf05abcde4a1d354bfd6980.stex"
+path="res://.import/kostermeh2.png-34fedabe9407202c5b2c0924d480c826.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/tropinka_pryamaya.png"
-dest_files=[ "res://.import/tropinka_pryamaya.png-39194b66caf05abcde4a1d354bfd6980.stex" ]
+source_file="res://textures/kostermeh2.png"
+dest_files=[ "res://.import/kostermeh2.png-34fedabe9407202c5b2c0924d480c826.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trava.png-0ab87b8f40e72c4b31d6a625707e2f37.stex"
+path="res://.import/Цветок в бочке.png-ae3e32aa5ee911b190ae25454512d3cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/trava.png"
-dest_files=[ "res://.import/trava.png-0ab87b8f40e72c4b31d6a625707e2f37.stex" ]
+source_file="res://textures/Цветок в бочке.png"
+dest_files=[ "res://.import/Цветок в бочке.png-ae3e32aa5ee911b190ae25454512d3cd.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

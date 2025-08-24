@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tropinka_povorot1.png-dc39b6d6a74b50440082d34fc9484d0a.stex"
+path="res://.import/Камень 1.png-31dcef26dc3df23775baac959427b7b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/tropinka_povorot1.png"
-dest_files=[ "res://.import/tropinka_povorot1.png-dc39b6d6a74b50440082d34fc9484d0a.stex" ]
+source_file="res://textures/Камень 1.png"
+dest_files=[ "res://.import/Камень 1.png-31dcef26dc3df23775baac959427b7b7.stex" ]
 
 [params]
 

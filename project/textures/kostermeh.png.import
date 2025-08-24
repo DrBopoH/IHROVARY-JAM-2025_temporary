@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tropinka_gorizont.png-ae88a18c578d235e0e23081ff44b9a80.stex"
+path="res://.import/kostermeh.png-6d45f576efada65ec9b7a7466401d34d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/tropinka_gorizont.png"
-dest_files=[ "res://.import/tropinka_gorizont.png-ae88a18c578d235e0e23081ff44b9a80.stex" ]
+source_file="res://textures/kostermeh.png"
+dest_files=[ "res://.import/kostermeh.png-6d45f576efada65ec9b7a7466401d34d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
