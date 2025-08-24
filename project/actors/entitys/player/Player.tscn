@@ -1,13 +1,32 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://textures/entitys/player/player_right.png" type="Texture" id=1]
 [ext_resource path="res://actors/pcamera/PCamera.gd" type="Script" id=2]
 [ext_resource path="res://textures/entitys/player/player_back.png" type="Texture" id=3]
+[ext_resource path="res://textures/entitys/player/player_front.png" type="Texture" id=4]
+[ext_resource path="res://textures/entitys/player/player_left.png" type="Texture" id=5]
+[ext_resource path="res://textures/light_on!.png" type="Texture" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
 "loop": false,
 "name": "back",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": false,
+"name": "front",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": false,
+"name": "left",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": false,
+"name": "right",
 "speed": 1.0
 } ]
 
@@ -20,4 +39,8 @@ minmax = Vector2( 0.25, 0.75 )
 
 [node name="Texture" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "back"
+animation = "left"
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 6 )
+offset = Vector2( -1.5, 106 )

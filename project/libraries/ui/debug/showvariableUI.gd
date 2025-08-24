@@ -8,6 +8,8 @@ var _value_type: String
 
 
 func _init(varname: String, get_data: FuncRef, value_type) -> void: #INIT
+	add_font_override("font", Options.pixel_font)
+	
 	_varname = varname
 	_get_data = get_data
 	_value_type = value_type

@@ -1,15 +1,20 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://actors/ui/NavButton.gd" type="Script" id=1]
-[ext_resource path="res://ui/utils/back/Back.png" type="Texture" id=2]
+[ext_resource path="res://ui/utils/fonts/PixelWrite.tres" type="DynamicFont" id=2]
 
 [node name="NavBack" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Back" type="TextureButton" parent="."]
-margin_left = -21.0
-margin_right = 107.0
+margin_right = 128.0
 margin_bottom = 64.0
-texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="Back"]
+margin_left = 10.0
+margin_right = 226.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 2 )
+text = "Повернутись"

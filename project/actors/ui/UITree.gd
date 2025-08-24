@@ -5,7 +5,6 @@ export(Array, String) var start = []
 export(Array, String) var forever = []
 export(Array, String) var scenes = []
 
-var camera: Camera2D
 var history: Array = []
 
 var UiTree: CanvasLayer
@@ -36,7 +35,7 @@ func _mount_scene(node: Node, mount: bool = true) -> void:
 				child.connect("pressed", self, "_on_button_pressed", [child])
 		if child is Camera2D:
 			if child.current:
-				camera = child
+				Options.current_camera = child
 		_mount_scene(child, false)
 	
 	if mount:
