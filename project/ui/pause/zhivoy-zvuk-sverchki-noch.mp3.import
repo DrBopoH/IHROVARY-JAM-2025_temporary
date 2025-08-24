@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zhivoy-zvuk-sverchki-noch.mp3-7eaa81dea543269620557a8c555daa2a.mp3str"
+
+[deps]
+
+source_file="res://ui/pause/zhivoy-zvuk-sverchki-noch.mp3"
+dest_files=[ "res://.import/zhivoy-zvuk-sverchki-noch.mp3-7eaa81dea543269620557a8c555daa2a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

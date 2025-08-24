@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zvuk-pary-sverchkov.mp3-b91974a7f33238213d74c40df8db1b95.mp3str"
+
+[deps]
+
+source_file="res://scenes/levels/zvuk-pary-sverchkov.mp3"
+dest_files=[ "res://.import/zvuk-pary-sverchkov.mp3-b91974a7f33238213d74c40df8db1b95.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

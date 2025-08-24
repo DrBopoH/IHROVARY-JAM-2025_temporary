@@ -43,3 +43,6 @@ offset = Vector2( -1.5, 106 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Light2D/Area2D"]
 polygon = PoolVector2Array( 0, -28, 144, 184, 49, 246, -45, 246, -146, 182 )
+
+[node name="Listener2D" type="Listener2D" parent="."]
+current = true

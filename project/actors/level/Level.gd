@@ -7,6 +7,7 @@ var move_tic: int
 var astral:= AStar2D.new() 
 
 var level_size:= 100
+var lights: Array
 
 var shadow_posito: Vector2
 var player_posito: Vector2
@@ -28,8 +29,8 @@ var pl_tic: int
 var sw_tic: int
 
 func _ready():
-	$Player/Light2D/Area2D.connect("area_entered", self, "_on_Area2D_body_entered")
-	$Player/Light2D/Area2D.connect("area_exited", self, "_on_Area2D_body_exited")
+	$Shadow/Area.connect("area_entered", self, "_on_Area2D_body_entered")
+	$Shadow/Area.connect("area_exited", self, "_on_Area2D_body_exited")
 	
 	$Player/Light2D.shadow_enabled = true
 	$Player/Light2D.shadow_color = Color(0, 0, 0, 0.8)
@@ -95,8 +96,9 @@ func get_direction(from: Vector2, to: Vector2) -> String:
 
 func _physics_process(delta):
 	if has_node("Player"):
+		if !$AudioStreamPlayer.playing: $AudioStreamPlayer.play()
+		
 		$Shadow.modulate.a = 1 - clamp($Player.position.distance_to($Shadow.position)/250, 0.1, 1)
-		print($Shadow.modulate.a)
 		
 		$PCamera.position = $Player.position
 		if to_grid($Player.position) == to_grid($Shadow.position):
@@ -113,7 +115,7 @@ func _physics_process(delta):
 			var movtime = float(move_tic)/Engine.iterations_per_second
 			
 			for am in $Level1.time.keys():
-				if time > $Level1.time[am]: Options.AM.text = am
+				if time < $Level1.time[am]: Options.AM.text = am
 			
 			if time < $Level1.time['5:00 AM']:
 				if way.size() > 0:
@@ -186,12 +188,18 @@ func _physics_process(delta):
 				move_tic+= 1
 				tic+= 1
 			else:
-				$CanvasModulate.queue_free()
+				$AudioStreamPlayer.stop()
+				if has_node("CanvasModulate"): $CanvasModulate.queue_free()
 				$Shadow.visible = true
 				$Shadow.modulate.a = 1
+				
+				$NavButton.emit_signal("pressed")
+				if !$AudioStreamPlayer2.playing: $AudioStreamPlayer2.play()
 
 func _on_Area2D_body_entered(body):
+	lights.append(body)
 	$Shadow.visible = true
 
 func _on_Area2D_body_exited(body):
-	$Shadow.visible = false
+	lights.erase(body)
+	if lights.size() < 1: $Shadow.visible = false
