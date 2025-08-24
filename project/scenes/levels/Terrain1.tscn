@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://actors/entitys/player1/Player1.tscn" type="PackedScene" id=1]
-[ext_resource path="res://actors/entitys/shadow/Shadow.tscn" type="PackedScene" id=2]
+[ext_resource path="res://actors/entitys/shadow1/Shadow1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://textures/png-klev-club-dql5-p-kamen-mainkraft-png-8 (1).png" type="Texture" id=3]
 [ext_resource path="res://scenes/levels/grass.tres" type="TileSet" id=4]
 [ext_resource path="res://textures/muhomor.png" type="Texture" id=5]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://actors/ui/NavButton.gd" type="Script" id=1]
+[ext_resource path="res://ui/utils/fonts/PixelWrite.tres" type="DynamicFont" id=2]
 [ext_resource path="res://libraries/ui/LineBar.gd" type="Script" id=3]
 [ext_resource path="res://ui/HUD/HUD.gd" type="Script" id=4]
 [ext_resource path="res://ui/utils/fonts/Pixel.tres" type="DynamicFont" id=5]
@@ -61,3 +62,17 @@ color_stages = [ Color( 1, 0, 0, 1 ), Color( 1, 1, 0, 1 ), Color( 1, 1, 1, 1 ), 
 position = Vector2( 40, 0 )
 script = ExtResource( 3 )
 color_stages = [ Color( 1, 0, 0, 1 ), Color( 1, 0.501961, 0, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+
+[node name="Over" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -93.0
+margin_top = -22.0
+margin_right = 93.0
+margin_bottom = 22.0
+rect_scale = Vector2( 4, 4 )
+custom_fonts/font = ExtResource( 2 )
+text = "GAME OVER"

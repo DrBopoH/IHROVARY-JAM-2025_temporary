@@ -10,6 +10,7 @@ var current_hpbar: LineBar
 var step_timebar: LineBar
 var steps: Label
 var AM: Label
+var over: Label
 
 var pixel_font:= preload("res://ui/utils/fonts/Pixel.tres")
 

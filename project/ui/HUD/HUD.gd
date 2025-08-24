@@ -21,6 +21,9 @@ func _ready():
 	$AM.rect_position.x = get_viewport().size.x - $AM.rect_size.x*2.1
 	
 	Options.steps = $Steps
+	
+	$Over.rect_position = get_viewport().size*0.5 - $Over.rect_size*2
+	Options.over = $Over
 
 func _process(delta):
 	$LineBar.scale = Vector2(1, 1)/Options.current_camera.zoom
