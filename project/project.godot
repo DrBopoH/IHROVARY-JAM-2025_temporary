@@ -60,7 +60,8 @@ config/name="Ihrovary JAM2025  TRACE"
 run/main_scene="res://Client.tscn"
 boot_splash/image="res://scenes/loader/textures/Back1.png"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
-config/icon="res://app/Лого.png"
+config/icon="res://app/Icon512.png"
+config/windows_native_icon="res://app/Icon.ico"
 
 [autoload]
 
